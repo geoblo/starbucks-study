@@ -34,9 +34,21 @@ window.addEventListener('scroll', function () {
   // 페이지 스크롤 위치가 500px을 넘으면 배지 요소를 숨기고,
   // 페이지 스크롤 위치가 500px을 넘지 않으면 배지 요소 보이기!
   if (window.scrollY > 500) {
-    badgeEl.style.display = 'none';
+    // badgeEl.style.display = 'none';
+
+    // gsap 적용
+    // gsap.to(요소, 지속시간, 옵션: {}) 메소드: CSS 속성을 통해 애니메이션 처리
+    gsap.to(badgeEl, 0.6, {
+      opacity: 0,
+      display: 'none'
+    });
   } else {
-    badgeEl.style.display = 'block';
+    // badgeEl.style.display = 'block';
+
+    gsap.to(badgeEl, 0.6, {
+      opacity: 1,
+      display: 'block'
+    });
   }
 });
 
