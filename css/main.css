@@ -380,6 +380,24 @@ header .badges .badge {
   /* 비율 나누기 */
   /* width: 30%; */
   flex: 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.notice .inner__right h2 {
+  font-size: 17px;
+  font-weight: 700;
+}
+.notice .inner__right .toggle-promotion {
+  width: 62px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.notice .inner__right .toggle-promotion .material-icons {
+  font-size: 30px;
 }
 
 /* PROMOTION */
@@ -389,6 +407,16 @@ header .badges .badge {
   display: flex;
   justify-content: center;
   position: relative;
+
+  overflow: hidden;
+  transition: height 0.4s;
+}
+.promotion.hide {
+  /* display 속성을 사용하면 애니메이션 효과 못넣음!!
+    (none -> block 될 때 중간 과정이 없기 때문에)
+  */
+  /* display: none; */
+  height: 0;
 }
 .promotion .swiper {
   /* 이미지(819px) 슬라이드 3개 && 사이 여백(10px) 2개 = 2477px */
