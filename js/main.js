@@ -28,7 +28,7 @@ const badgeEl = document.querySelector('header .badges');
 // 페이지에 스크롤 이벤트를 추가!
 // window: 브라우저 창 객체
 window.addEventListener('scroll', function () {
-  console.log(window.scrollY); // (y축으로 얼마나 스크롤 했는지) 페이지 스크롤 위치
+  // console.log(window.scrollY); // (y축으로 얼마나 스크롤 했는지) 페이지 스크롤 위치
 
   // Quiz:
   // 페이지 스크롤 위치가 500px을 넘으면 배지 요소를 숨기고,
@@ -55,7 +55,7 @@ window.addEventListener('scroll', function () {
 // 순차적으로 VISUAL 섹션 내 요소 보이기
 // 나타날 요소(.fade-in)들을 찾기
 const fadeEls = document.querySelectorAll('.visual .fade-in');
-console.log(fadeEls);
+// console.log(fadeEls);
 // 요소들을 하나씩 반복해서 처리!
 fadeEls.forEach(function (fadeEl, index) {
   // gsap.to(요소, 지속시간, 옵션: {})
@@ -118,3 +118,7 @@ promotionToggleBtn.addEventListener('click', function () {
     promotionToggleIcon.textContent = 'download'; // 아이콘 모양 바꾸기
   }
 });
+
+// 유튜브 섹션 위에 부유 요소 애니메이션 처리
+// gsap.to(요소, 지속시간, 옵션: {})
+// 옵션 참고: https://greensock.com/docs/v3/GSAP/gsap.to()
