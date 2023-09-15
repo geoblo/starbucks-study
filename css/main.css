@@ -631,3 +631,16 @@ header .badges .badge {
   bottom: -200px;
   right: 0;
 } */
+
+/* SEASON PRODUCT */
+.season-product {
+  background-image: url("../images/season_product_bg.jpg");
+}
+.season-product .inner {
+  height: 400px;
+}
+.season-product .floating3 {
+  position: absolute;
+  top: -200px;
+  right: 0;
+}
