@@ -155,3 +155,15 @@ spyEls.forEach(function (spyEl) {
   .setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
   .addTo(new ScrollMagic.Controller()); // 컨트롤러에 장면을 할당(필수!)
 });
+
+// 어워즈 섹션 슬라이드 기능
+new Swiper('.awards .swiper', {
+  loop: true,
+  autoplay: true,
+  slidesPerView: 5,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.awards .swiper-button-next',
+    prevEl: '.awards .swiper-button-prev'
+  }
+});
